@@ -5,7 +5,7 @@ import (
 	"sort"
 )
 
-func main() {
+func slices() {
 	// 슬라이스 추가, 병합
 
 	s1 := []int{1, 2, 3, 4, 5}
