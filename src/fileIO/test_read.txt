@@ -1,0 +1,15 @@
+This error message typically occurs when you try to run a Go application on an M1 Mac using GoLand while running the app in Rosetta mode. Rosetta is an emulator that allows apps built for Intel processors to run on M1 Macs. However, GoLand is a native app designed for M1 Macs, and it requires the Go runtime built for M1 processors.
+
+To resolve this issue, you can try the following steps:
+
+Ensure that you have installed the latest version of GoLand that is compatible with M1 Macs. You can download it from the official website of JetBrains.
+
+Make sure that you have installed the Go toolchain that is built for M1 processors. You can download the latest version of Go for M1 Macs from the official Go website.
+
+Open GoLand and navigate to Preferences > Go > Go SDKs. Make sure that the path to the Go SDK is set to the version of Go that you installed for M1 processors.
+
+If the issue persists, try disabling Rosetta for GoLand. To do this, locate the GoLand app in Finder, right-click on it, and select "Get Info." In the "General" section, check the box labeled "Open using Rosetta."
+
+Finally, try running your Go application again and see if the issue has been resolved.
+
+If none of the above steps work, you can try contacting the GoLand support team for further assistance.
