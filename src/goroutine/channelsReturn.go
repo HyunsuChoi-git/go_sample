@@ -29,12 +29,13 @@ func receiveOnly(cnt int) <-chan int {
 		tot <- 777
 		tot <- 777
 
-		close(tot)
+		close(tot) // 닫아버렸기 때문에 값만 들어있는 수신 전용 채널이 된 것임.
 	}()
 
 	return tot
 }
 
+// 수신 전용 메소드
 func total(c <-chan int) <-chan int {
 	tot := make(chan int)
 

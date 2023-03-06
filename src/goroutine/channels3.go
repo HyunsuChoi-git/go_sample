@@ -40,6 +40,6 @@ func main() {
 		}
 	}()
 
-	time.Sleep(7 * time.Second)
+	time.Sleep(7 * time.Second) // 7초 뒤에 main 종료
 
 }

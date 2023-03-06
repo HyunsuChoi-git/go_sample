@@ -19,24 +19,24 @@ import (
 */
 
 func work11(v chan int) {
-	fmt.Println("Work1 : S --->", time.Now())
+	fmt.Println("Work1 : Start --->", time.Now())
 	time.Sleep(1 * time.Second)
-	fmt.Println("Work1 : E --->", time.Now())
+	fmt.Println("Work1 : End --->", time.Now())
 	v <- 1
 }
 
 func work22(v chan int) {
-	fmt.Println("Work2 : S --->", time.Now())
+	fmt.Println("Work2 : Start --->", time.Now())
 	time.Sleep(1 * time.Second)
-	fmt.Println("Work2 : E --->", time.Now())
+	fmt.Println("Work2 : End --->", time.Now())
 	v <- 2
 }
 
 func main() {
 
-	fmt.Println("Main : S ---> ", time.Now())
+	fmt.Println("Main : Start ---> ", time.Now())
 
-	// var c chan int
+	// var c chan int0
 	// c = make(chan int)
 
 	v := make(chan int)
@@ -45,6 +45,6 @@ func main() {
 
 	<-v
 	<-v
-	fmt.Println("Main : E ---> ", time.Now())
+	fmt.Println("Main : End ---> ", time.Now())
 
 }

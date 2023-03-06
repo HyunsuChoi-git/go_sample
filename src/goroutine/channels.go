@@ -26,11 +26,6 @@ func receiveOnly(c <-chan int) {
 
 func main() {
 
-	// 수신 전용 채널, 발신 전용 채널을 구분한다.
-	// 발신 전용 channel <- 데이터
-	// 수신 전용  <- channel
-
-	// 1.
 	c := make(chan int)
 
 	go sendOlny(c, 10) // 발신전용
